@@ -162,13 +162,13 @@ sup {
 }
 
 a {
-  color: #ff6e42;
+  color: #000000;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #f53900;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -2772,8 +2772,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #ff6e42;
-  border-color: #ff6e42;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .btn-primary:hover {
@@ -2788,8 +2788,8 @@ fieldset:disabled a.btn {
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #ff6e42;
-  border-color: #ff6e42;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,

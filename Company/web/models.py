@@ -30,6 +30,9 @@ class Project(models.Model):
 
     def __str__(self):
         return self.describtion
+    
+    def category_return(self):
+        return self.category
 
 class Managers(models.Model):
     picture = models.ImageField(upload_to='static/imgs')
