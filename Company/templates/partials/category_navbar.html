@@ -1,0 +1,12 @@
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a href="{% url 'HomePage' %}">خانه</a>
+        </li>
+        {% for cat in category %}
+        <li>
+            <a href="{% url 'CategoryDetail' cat.slug %}">{{ cat.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
