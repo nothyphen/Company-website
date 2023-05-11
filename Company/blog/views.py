@@ -1,13 +1,16 @@
 from django.shortcuts import render, get_object_or_404
 from .models import *
 from django.http import Http404
+from django.core.paginator import Paginator
 # Create your views here.
 
 def HomeBlog(request):
     articles = Article.objects.filter(status="p").order_by('-publish')
-
+    pages = Paginator(articles, 8)
+    page_number = request.GET.get("page")
+    page_obj = pages.get_page(page_number)
     context = {
-        'articles' : articles,
+        'articles' : page_obj,
     }
 
     return render(request, 'blog.html', context=context)
